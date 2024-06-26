@@ -43,7 +43,8 @@ body {
     margin-bottom: 10px;
     text-align: left;
     padding-left: 71px;
-    margin-top: 122px;    font-size: 1.1rem;
+    margin-top: 125px;
+    font-size: 14px;
     line-height: 1.5;
     animation: fadeIn 1s ease-in-out;
 }
@@ -153,7 +154,7 @@ form {
 
 input[type="text"] {
     width: 100%;
-    max-width: 500px;
+    max-width: 810px;
     padding: 12px;
     border: 1px solid #555;
     border-radius: 5px;
@@ -215,7 +216,7 @@ button:hover {
 }
 
 .logo img {
-    width: 145px;
+    width: 115px;
     height: auto;
     margin-top: -41px;
 }
@@ -269,6 +270,7 @@ button:hover {
         padding: 10px;
         font-size: 0.9rem;
         margin-right: 5px;
+        max-width: 500px;
     }
 
     .avatar img {

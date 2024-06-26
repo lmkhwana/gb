@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBudd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Link to your favicon -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Optional: Add a fallback for older browsers -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Your other meta tags, stylesheets, and scripts -->
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/img/logo.png" alt="GymBudd Logo">
+        </div>
+        <div class="chat-box">
+            <div class="avatar">
+                <img src="/img/avatar.jpg" alt="Avatar">
+            </div>
+            <div class="message">
+                <!-- Your chat messages here -->
+            </div>
+        </div>
+        <div class="tasks">
+            <div class="task-pill">How to start a workout routine?</div>
+            <div class="task-pill">Best diet for muscle gain?</div>
+            <div class="task-pill">How to lose belly fat?</div>
+            <div class="task-pill">Effective cardio exercises?</div>
+            <div class="task-pill">How to stay motivated?</div>
+        </div>
+        <form action="/register" method="post">
+            <input type="text" name="prompt" placeholder="Ask GymBudd..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

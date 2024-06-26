@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - GymBudd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Link to your favicon -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Optional: Add a fallback for older browsers -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- Your other meta tags, stylesheets, and scripts -->
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/img/logo.png" alt="GymBudd Logo">
+        </div>
+        <h1 class="rtc">Register to continue</h1>
+        <% if (typeof error !== 'undefined') { %>
+            <div class="error"><%= error %></div>
+        <% } %>
+        <form action="/submit-registration" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            <input type="hidden" name="prompt" value="<%= prompt %>">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

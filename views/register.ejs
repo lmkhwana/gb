@@ -14,10 +14,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <img src="/img/logo.png" alt="GymBudd Logo">
-        </div>
-        <h1 class="rtc">Register to continue</h1>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/img/logo.png" alt="GymBudd Logo">
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2 class="rtc">Register to continue</h2>
         <% if (typeof error !== 'undefined') { %>
             <div class="error"><%= error %></div>
         <% } %>
